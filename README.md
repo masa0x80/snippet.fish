@@ -4,6 +4,20 @@
 
 `snippet` is a simple snippet selector for fish-shell.
 
+## Installation
+
+With [fresco]
+
+```
+fresco masa0x80/snippet.fish
+```
+
+With [fisherman]
+
+```
+fisher install masa0x80/snippet.fish
+```
+
 ### Requirements
 
 - fzf

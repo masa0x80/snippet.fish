@@ -9,4 +9,9 @@ function __snippet_init
             echo "vi $snippets_root/snippets        # Select me and edit snippets" > $snippets_root/snippets
         end
     end
+
+    # Set default project snippets directory name if not defined.
+    if test "$snippet_snippets_root" = ''
+        set -gx project_snippets_root .snippets.d
+    end
 end

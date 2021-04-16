@@ -32,7 +32,7 @@ function __snippet_fill_in
 
     # Escape before `eval`
     # (Don't escape $ because we want to expand the variable)
-    set cmd (echo $cmd | sed -e "s|'|\\\\'|g" -e 's|"|\\\\"|g' -e 's|;|\\\\;|g' -e 's|&|\\\\&|g' -e 's,|,\\\\|,g' -e 's|>|\\\\>|g' -e 's|<|\\\\<|g')
+    set cmd (echo $cmd | sed -e "s|'|\\\\'|g" -e 's|\"|\\\\"|g' -e 's|;|\\\\;|g' -e 's|&|\\\\&|g' -e 's,|,\\\\|,g' -e 's|>|\\\\>|g' -e 's|<|\\\\<|g')
 
     # Expand internal variables
     set cmd (eval "echo $cmd")
